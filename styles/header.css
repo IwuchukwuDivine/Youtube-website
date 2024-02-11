@@ -1,0 +1,146 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(240, 228, 228);
+  z-index: 100;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  
+} 
+.middle-section {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.last-section{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.hamburger {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.youtube {
+  height: 22px;
+  cursor: pointer;
+}
+.upload, .apps, .notification{
+  height: 25px;
+  cursor: pointer;
+}
+.notification-count {
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  background-color: rgb(199, 11, 11);
+  color: white;
+  padding: 2px;
+  width: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.me {
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.input-search {
+  padding-left: 10px;
+  height: 35px;
+  font-size: 16px;
+  flex: 1;
+  border-color: #cccccc;
+  border-style: solid;
+  border-right: none;
+  border-width: 1px;
+  border-radius: 2px;
+  width: 0;
+  
+}
+.input-search::placeholder {
+  font-family: Roboto;
+  font-size: 17px;
+}
+.search {
+  height: 25px;
+  margin-top: 5px;
+}
+.voice {
+  height: 20px;
+  margin-top: 4px;
+}
+.search-holder {
+  height: 39px;
+  width: 62px;
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.voice-holder {
+  border: none;
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.create, .you-tube-app, .search-holder, .voice-holder, .notification-container {
+  position: relative;
+}
+.tool-tip {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  background-color: rgb(116, 113, 113);
+  padding: 10px 9px;
+  opacity: 0;
+  bottom: -50px;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  border-radius: 3px;
+  font-family: Roboto, Arial;
+  white-space: nowrap;
+}
+.voice-holder .tool-tip {
+  margin-left: -52px;
+}
+.create .tool-tip {
+  left: -12px;
+}
+.you-tube-app .tool-tip {
+  left: -35px;
+}
+.notification-container .tool-tip {
+  left: -25px;
+}
+.search-holder:hover .tool-tip,
+ .voice-holder:hover .tool-tip,
+ .create:hover .tool-tip,
+ .you-tube-app:hover .tool-tip, 
+ .notification-container:hover .tool-tip {
+  opacity: 1;
+ }
+ 
